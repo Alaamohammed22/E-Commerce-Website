@@ -1,0 +1,46 @@
+﻿
+@model Supplier_Product
+@{
+    Layout = "_productLayout";
+
+}
+<div class="container p-3">
+<form asp-action="Update">
+    <input type="number" hidden name="ID" value="@Model.ID">
+    <input type="number" hidden name="ProductID" value="@Model.ProductID">
+    <input type="number" hidden name="SupplierID" value="@Model.SupplierID">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Price" class="control-label"></label>
+        <input asp-for="Price" value="@Model.Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Quantity" class="control-label"></label>
+        <input asp-for="Quantity" value="@Model.Quantity" class="form-control" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Specifications" class="control-label"></label>
+        <input asp-for="Specifications" value="@Model.Specifications" class="form-control" />
+        <span asp-validation-for="Specifications" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PointsForProduct" class="control-label"></label>
+        <input asp-for="PointsForProduct" value="@Model.PointsForProduct" class="form-control" />
+        <span asp-validation-for="PointsForProduct" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="OfferID"></label>
+        <select asp-for="OfferID" class="form form-control">
+            @foreach (var item in (List<Offer>)@ViewData["offers"])
+            {
+                <option value="@item.ID">@item.Name</option>
+            }
+        </select>
+        <span asp-validation-for="OfferID"></span>
+    </div>
+    <input type="submit" class="btn btn-info">
+</form>
+
+        </div>

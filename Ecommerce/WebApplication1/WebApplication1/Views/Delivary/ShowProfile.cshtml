@@ -1,0 +1,188 @@
+﻿@model WebApplication1.ViewModel.DelivaryWithOrderListVM
+
+@{
+    ViewData["Title"] = "ShowProfile";
+    Layout = "_productLayout";
+}
+
+<style>
+body{margin-top:100px}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(250, 200, 250);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+</style>
+<div asp-validation-summary="All" class="text-danger"></div>
+<div class="container rounded mt-5 mb-5" style="background-color:#ffd333;">
+    <div class="row">
+        <div class="col-md-12">
+            <form class="row" asp-action="ShowProfile" enctype="multipart/form-data">
+           
+                <input hidden asp-for="ID" class="form-control" />
+              <div class="col-md-4 border-right">
+                    <div class="d-flex flex-column align-items-center text-center p-3 py-5 mt-5">
+                        <img class="rounded-circle mt-5" width="150px" height="150px" src="/Files/ProfileIMG/@Model.Image">
+                            <span class="font-weight-bold">@Model.UserName</span>
+                    </div>
+                    <div class="form-group hiden" style="display:none">
+                    <label asp-for="ImageFile" class="control-label"></label>
+                    <input disabled asp-for="ImageFile" class="form-control" />
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                </div>
+              </div>
+                <div class="col-md-8 border-right">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="text-right">Profile Settings</h4>
+                        </div>
+                        <div class="row mt-3">
+
+                            <div class="form-group col-md-6">
+                                <label asp-for="UserName" class="control-label" style="margin-top:5px;"></label>
+                                <input asp-for="UserName" class="form-control" disabled style="background-color:white; border:none;" />
+                                <span asp-validation-for="UserName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="Email" class="control-label" style="margin-top:5px"></label>
+                                <input asp-for="Email" class="form-control" disabled style="background-color:white; border:none" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label asp-for="Address" class="control-label" style="margin-top:5px"></label>
+                                <input asp-for="Address" class="form-control" disabled style="background-color:white; border:none" />
+                                <span asp-validation-for="Address" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="PhoneNumber" class="control-label" style="margin-top:5px"></label>
+                                <input asp-for="PhoneNumber" class="form-control" disabled style="background-color:white; border:none" />
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label asp-for="SSN" class="control-label" style="margin-top:5px;"></label>
+                                <input disabled asp-for="SSN" class="form-control" disabled style="background-color:white; border:none" />
+                                <span asp-validation-for="SSN" class="text-danger"></span>
+                            </div>
+                             <div class="form-group col-md-6">
+                                <label asp-for="AccountNumber" class="control-label" style="margin-top:5px;"></label>
+                                <input disabled asp-for="AccountNumber" class="form-control" disabled style="background-color:white; border:none" />
+                                <span asp-validation-for="AccountNumber" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <img src="/Files/SSNIMG/@Model.SSNImageName" alt="Cinque Terre" width="100%" height="50">
+                            </div>
+                            <div class="form-group form-check col-md-5 ml-3">
+                                <label class="form-check-label">
+                                    <input id="addOrder" disabled class="form-check-input" asp-for="IsBusy" style="background-color:white; border:none" /> @Html.DisplayNameFor(model => model.IsBusy)
+                                </label>
+                            </div>
+                            <div class="form-group col-md-6  hiden" style="display:none">
+                                <label asp-for="SSNImageFile" class="control-label"></label>
+                                <input disabled asp-for="SSNImageFile" class="form-control" />
+                                <span asp-validation-for="SSNImageFile" class="text-danger"></span>
+                            </div>
+                 
+                        </div>
+                        <div class="mt-5 text-center">
+                            <button class="btn btn-primary profile-button" type="button" id="edit">
+                                Edit Profile
+                            </button>
+                        </div>
+                        <div class="mt-5 text-center hiden" style="display:none;">
+                            <button class="btn btn-primary profile-button" type="submit">
+                                Save Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </form>
+        </div>
+    </div>
+</div>
+
+@*@if(!Model.IsBusy)
+{*@
+    <div class="container p-5">
+
+        <h3>Available Orders</h3>
+        <table class="table table-hover border">
+           @foreach (Order item in Model.Orders)
+           {
+               <tr>
+                <td>@item.Date</td>
+                <td>@item.TotalPrice</td>
+                <td>@item.PaidMethod</td>
+                <td>@item.CrediteNumber</td>
+                <td><button class="btn btn-primary" id="BtnChoose" onclick="ChooseOrder(@item.ID)" style="border:1px solid black;margin:10px;">ChooseOrder</td>
+               </tr>
+           @* <button class="btn btn-alert" id="BtnChoose" onclick="ChooseOrder(@item.ID)" style="border:1px solid black;padding:50px;margin:10px;">
+            <p>@item.Date</p>
+            <p>@item.TotalPrice</p>
+            <p>@item.PaidMethod</p>
+             <p>@item.CrediteNumber</p>
+            </button>*@
+           }
+        </table>
+        </div>
+
+@*}*@
+
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+
+        $('#edit').click(function () {
+            $("#edit").attr("style", "display:none")
+            $('input[type="text"]').removeAttr("disabled");
+            $('input[type="checkbox"]').removeAttr("disabled");
+            $('input[type="file"]').removeAttr("disabled");
+            $('input[type="text"]').removeAttr("style");
+            $(".hiden").attr("style", "display:block");
+        });
+
+
+        function ChooseOrder(id) {
+            var order = $('#addOrder').text();
+            $.ajax({
+                type: 'post',
+                url: "/Delivary/Checked/" + id,
+                success: function (result) {
+                    console.log("Success");
+                }
+
+            })
+        }
+
+                         //$('#BtnChoose').click(function () {
+                        //    $(this).attr('disabled', 'selected');
+                        //    $('#addOrder').prop('checked', true);
+                        //});
+                        //$('#orderBtn').click(function () {
+                        //    //$('input[type="checkbox"]').removeAttr("hidden");
+                        //    $('#big').show();
+                        //})
+                        //$('#edit').click(function () {
+                        //    $('input[type="text"]').removeAttr("disabled");
+                        //    $('input[type="checkbox"]').removeAttr("disabled");
+                        //        $('input[type="file"]').removeAttr("disabled");
+                        //    $('input[type="submit"]').removeAttr("hidden");
+                        //    $('input[type="text"]').removeAttr("style");
+                        //});
+
+    </script>
+}

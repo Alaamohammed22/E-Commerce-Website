@@ -1,0 +1,36 @@
+﻿@model WebApplication1.ViewModel.BrandVM
+
+@{
+    ViewData["Title"] = "BrandNew";
+    Layout = "_AdminLayout";
+
+}
+
+<h2>Brand</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="BrandNew">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="BrandIndex">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

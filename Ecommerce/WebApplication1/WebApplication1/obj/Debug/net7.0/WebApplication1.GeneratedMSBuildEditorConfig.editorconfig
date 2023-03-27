@@ -1,0 +1,177 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebApplication1
+build_property.RootNamespace = WebApplication1
+build_property.ProjectDir = D:\ITI-9month\Asp.net Core MVC\MVCFinalGithub\Nada\WebApplication1\WebApplication1\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ITI-9month\Asp.net Core MVC\MVCFinalGithub\Nada\WebApplication1\WebApplication1
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Account/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Account/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Customer/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Customer/CustomerProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3VzdG9tZXJQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Customer/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Delivary/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZhcnlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Delivary/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZhcnlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Delivary/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZhcnlcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Delivary/ShowProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZhcnlcU2hvd1Byb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Products/Deatils.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVhdGlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Role/BrandEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxCcmFuZEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Role/BrandIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxCcmFuZEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Role/BrandNew.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxCcmFuZE5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Role/CategoryEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDYXRlZ29yeUVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Role/CategoryIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDYXRlZ29yeUluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Role/CategoryNew.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDYXRlZ29yeU5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Role/CustomerIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDdXN0b21lckluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Role/DelivaryIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxEZWxpdmFyeUluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Role/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Role/RoleIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxSb2xlSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Role/SupplierEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxTdXBwbGllckVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Role/SupplierIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxTdXBwbGllckluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Shared/_productLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9wcm9kdWN0TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/SupplierAction/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJBY3Rpb25cQWRkUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/SupplierAction/AddProductToMyList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJBY3Rpb25cQWRkUHJvZHVjdFRvTXlMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/SupplierAction/dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJBY3Rpb25cZGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/SupplierAction/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJBY3Rpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Supplier/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Supplier/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Supplier/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI-9month/Asp.net Core MVC/MVCFinalGithub/Nada/WebApplication1/WebApplication1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bddmc6yalx

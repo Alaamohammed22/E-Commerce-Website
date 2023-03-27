@@ -1,0 +1,55 @@
+﻿@using WebApplication1.Models;
+@model List<Supplier_Product>
+
+@{
+    ViewData["Title"] = "index";
+}
+
+<h1>index</h1>
+<p>
+    <a asp-action="CustomerProfile">@User.Identity.Name</a>
+</p>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<p>
+    <a asp-action="ShowCart">Cart</a>
+</p>
+@foreach (Supplier_Product item in Model)
+        {
+
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title" id="hfive">@item.Product.Name</h5>
+            <p class="card-text" id="parag1">@item.Product.ImageName</p>
+            <p class="card-text" id="parag2">@item.Product.Description</p>
+            <p class="card-text" id="parag3">@item.ID</p>
+            <p class="card-text" id="parag4">@item.Quantity</p>
+            <p class="card-text" id="parag5">@item.Price</p>
+            <button onclick="GetCart(@item.ID)" >Add To Cart</button>
+            @*<input asp-for="@item.ID" type="text" id="parag3">*@
+        </div>
+    </div>
+
+        }
+
+@*@section Scripts{
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+ <script>
+        //var name = $("#parag3").text();
+        function GetCart(name) {
+            
+            var img = $("#parag1").text();
+            $.ajax({
+                type: 'POST',
+                url: "/Customer/AddToCart",
+                data: {"productId": name },
+                success: function (result) {
+                    console.log("Success");
+                }
+            });
+        };
+ </script>
+}
+*@

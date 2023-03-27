@@ -1,0 +1,57 @@
+﻿@model IEnumerable<WebApplication1.Models.Category>
+
+@{
+    ViewData["Title"] = "CategoryIndex";
+    Layout = "_AdminLayout";
+
+}
+
+<h2>Categories</h2>
+
+<p>
+    <a asp-action="CategoryNew">Create New</a>
+</p>
+<table class="table table-hover border">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr id="TR_@item.ID">
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <a class="btn btn-primary mx-2" asp-action="CategoryEdit" asp-route-id="@item.ID">Edit</a>
+                <a class="btn btn-primary" onclick="Delete(@item.ID)">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+@section Scripts
+{
+<script>
+        function Delete(categoryid) {
+            $.ajax({
+                url: "/Role/CategoryDelete",
+                data: { "id": categoryid },
+                success: function (result) {
+                    $(`#TR_${categoryid}`).remove()
+                },
+            });
+        }
+</script>
+}

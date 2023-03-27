@@ -1,0 +1,57 @@
+﻿@model IEnumerable<WebApplication1.Models.Customer>
+
+@{
+    ViewData["Title"] = "CustomerIndex";
+    Layout = "_AdminLayout";
+}
+
+<h2>Customers</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApplicationUser.UserName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr id="TR_@item.ID">
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ApplicationUser.UserName)
+                </td>
+                <td>
+                    <a class="btn btn-primary" onclick="Delete(@item.ID)">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+@section Scripts
+    {
+    <script>
+        function Delete(Customerid) {
+            $.ajax({
+                url: "/Role/CustomerDelete",
+                data: { "id": Customerid },
+                success: function (result) {
+                    $(`#TR_${Customerid}`).remove()
+                },
+            });
+        }
+    </script>
+}
+

@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<Supplier> 
+
+<h1>Index</h1>
+<a href="/Supplier/New" class="btn btn-primary">Add NEW Supplier</a>
+<br />
+
+<div style="background-color:green" id="div1">
+    @if (@TempData["msg"] != null)
+    {
+        <div style="background-color:green;color:black"> @TempData["msg"] </div>
+
+        string msg = (string)@TempData["msg"];
+        <script>
+            UIkit.notification({ message: '@msg', status: 'primary', pos: 'bottom-center', timeout: 3000 });
+        </script>
+
+    }
+    @if (@TempData["update"] != null)
+    {
+        <div style="background-color:green;color:black"> @TempData["update"] </div>
+
+        string msg = (string)@TempData["update"];
+        <script>
+            UIkit.notification({ message: '@msg', status: 'primary', pos: 'bottom-center', timeout: 3000 });
+        </script>
+
+    }
+
+</div>
+<table class="table table-bordered table-hover">
+    <tr>
+        <td>ID</td>
+        <td>SSN</td>
+        <td>AccountNumber</td>
+        <td>TotalSales</td>
+        <td>VerifecationState</td>
+        <td>    </td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.SSN</td>
+            <td>@item.AccountNumber</td>
+            <td>@item.TotalSales</td>
+            <td>@item.VerifecationState</td>
+            <td><a href="/Supplier/Edit" class="btn btn-info">Edit</a> <a href="/Supplier/Delete/@item.ID" class="btn btn-danger">delete</a></td>
+            @*<td><a href="/Supplier/Delete/@item.ID" class="btn btn-danger">delete</a></td>*@
+        </tr>
+    }
+
+</table>

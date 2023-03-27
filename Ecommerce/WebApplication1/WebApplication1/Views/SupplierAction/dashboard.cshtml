@@ -1,0 +1,103 @@
+﻿
+    @*For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860*@
+
+
+@model List<SupplierProductVM> 
+
+@{
+    ViewData["Title"] = "Product";
+    Layout = "_productLayout";
+
+}
+
+
+<div id="div" class="container p-5">
+
+
+    <table class="table table-bordered table-hover">
+        <tr>
+            <td>ID</td>
+            <td>SSN</td>
+             <td>Product.Name </td>
+                    <td>Quantity </td>
+                    <td>Price </td>
+                    <td>PointsForProduct </td>
+         
+            <td>    </td>
+        </tr>
+    
+        
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.SSN</td>
+                    <td>@item.NameProduct </td>
+                    <td>@item.Quantity </td>
+                    <td>@item.Price </td>
+                    <td>@item.PointsForProduct </td>
+            <td><a href="/SupplierAction/Edit/@item.ID" class="btn btn-info">Edit</a> <a href="/SupplierAction/Delete/@item.ID" class="btn btn-danger">delete</a></td>
+
+                   
+                    
+                </tr>
+            }
+   
+
+    </table>
+     <a href="/SupplierAction/AddProduct" class="btn btn-primary mb-5">Add New Product</a> 
+    
+
+     
+
+
+@{
+    const int count = 0;
+}
+   <div class="container">
+       <div class="row gx-1">
+        @foreach (var item in ViewBag.products2)
+{
+    
+    <div class="col-md-4 my-2">
+    <div class="card" style="width: 18rem;">
+@*         <img class="card-img-top" src="@item.ImageName" alt="Card image cap"> *@
+          <img class="card-img-top" src="/Files/ProductImg/@item.ImageName" alt="Card image cap">
+        <div class="card-body">
+            
+            <h5 class="card-title">@item.Name</h5>
+            <p class="card-text">@item.Description</p>
+            <a href="/SupplierAction/AddProductToMyList/@item.ID" class="btn btn-primary">AddProductToMyList</a>
+        </div>
+    </div>
+     </div> 
+}
+
+        </div>
+    
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" 
+integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            <script>
+                
+    function deletes(id) {
+       
+        $.ajax(
+            {
+
+                url: "/SupplierAction/Delete",
+                data: { "id": id },
+                method:"get",
+               
+                success: function (result) {
+                    console.log(result);
+                    
+                    $("#div").html(result);
+                    
+                }
+            });
+              }
+            </script>

@@ -1,0 +1,58 @@
+﻿@model IEnumerable<WebApplication1.Models.Brand>
+
+@{
+    ViewData["Title"] = "BrandIndex";
+    Layout = "_AdminLayout";
+
+}
+
+<h2>Brands</h2>
+
+<p>
+    <a asp-action="BrandNew">Create New</a>
+</p>
+<table class="table table-hover border">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr id="TR_@item.ID">
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <a class="btn btn-primary mx-2" asp-action="BrandEdit" asp-route-id="@item.ID">Edit</a>
+                    <a class="btn btn-primary" onclick="Delete(@item.ID)">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts
+    {
+    <script>
+        function Delete(Brandid) {
+            $.ajax({
+                url: "/Role/BrandDelete",
+                data: { "id": Brandid },
+                success: function (result) {
+                    $(`#TR_${Brandid}`).remove()
+                },
+            });
+        }
+    </script>
+}

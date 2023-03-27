@@ -1,0 +1,621 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebApplication1.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\stroyka\\stroyka.css",
+      "PackagePath": "staticwebassets\\fonts\\stroyka\\stroyka.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\stroyka\\stroyka.svg",
+      "PackagePath": "staticwebassets\\fonts\\stroyka\\stroyka.svg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\stroyka\\stroyka.ttf",
+      "PackagePath": "staticwebassets\\fonts\\stroyka\\stroyka.ttf"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\stroyka\\stroyka.woff",
+      "PackagePath": "staticwebassets\\fonts\\stroyka\\stroyka.woff"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\aboutus.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\avatars\\avatar-1.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\avatar-1.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\avatars\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\avatar-2.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\avatars\\avatar-3.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\avatar-3.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\avatars\\avatar-4.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\avatar-4.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\banners\\banner-1-mobile.jpg",
+      "PackagePath": "staticwebassets\\images\\banners\\banner-1-mobile.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\banners\\banner-1.jpg",
+      "PackagePath": "staticwebassets\\images\\banners\\banner-1.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\categories\\category-1.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\category-1.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\categories\\category-2.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\category-2.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\categories\\category-3.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\category-3.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\categories\\category-4.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\category-4.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\categories\\category-5.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\category-5.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\categories\\category-6.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\category-6.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\favicon.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\languages\\language-1.png",
+      "PackagePath": "staticwebassets\\images\\languages\\language-1.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\languages\\language-2.png",
+      "PackagePath": "staticwebassets\\images\\languages\\language-2.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\languages\\language-3.png",
+      "PackagePath": "staticwebassets\\images\\languages\\language-3.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\languages\\language-4.png",
+      "PackagePath": "staticwebassets\\images\\languages\\language-4.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\languages\\language-5.png",
+      "PackagePath": "staticwebassets\\images\\languages\\language-5.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\logos\\logo-1.png",
+      "PackagePath": "staticwebassets\\images\\logos\\logo-1.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\logos\\logo-2.png",
+      "PackagePath": "staticwebassets\\images\\logos\\logo-2.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\logos\\logo-3.png",
+      "PackagePath": "staticwebassets\\images\\logos\\logo-3.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\logos\\logo-4.png",
+      "PackagePath": "staticwebassets\\images\\logos\\logo-4.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\logos\\logo-5.png",
+      "PackagePath": "staticwebassets\\images\\logos\\logo-5.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\logos\\logo-6.png",
+      "PackagePath": "staticwebassets\\images\\logos\\logo-6.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\logos\\logo-7.png",
+      "PackagePath": "staticwebassets\\images\\logos\\logo-7.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\megamenu\\megamenu-1.jpg",
+      "PackagePath": "staticwebassets\\images\\megamenu\\megamenu-1.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\megamenu\\megamenu-2.jpg",
+      "PackagePath": "staticwebassets\\images\\megamenu\\megamenu-2.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\megamenu\\megamenu-3.jpg",
+      "PackagePath": "staticwebassets\\images\\megamenu\\megamenu-3.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\payments.png",
+      "PackagePath": "staticwebassets\\images\\payments.png"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-1-thumbnail.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-1-thumbnail.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-1.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-1.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-10.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-10.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-2-thumbnail.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-2-thumbnail.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-2.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-2.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-3-thumbnail.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-3-thumbnail.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-3.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-3.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-4.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-4.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-5.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-5.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-6.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-6.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-7.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-7.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-8.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-8.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-9.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-9.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\posts\\post-featured.jpg",
+      "PackagePath": "staticwebassets\\images\\posts\\post-featured.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-10.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-11.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-11.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-12.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-12.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-13.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-13.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-14.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-14.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-15.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-15.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-16-1.html",
+      "PackagePath": "staticwebassets\\images\\products\\product-16-1.html"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-16-1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-16-1.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-16-2.html",
+      "PackagePath": "staticwebassets\\images\\products\\product-16-2.html"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-16-2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-16-2.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-16-3.html",
+      "PackagePath": "staticwebassets\\images\\products\\product-16-3.html"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-16-3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-16-3.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-16-4.html",
+      "PackagePath": "staticwebassets\\images\\products\\product-16-4.html"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-16-4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-16-4.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-16.html",
+      "PackagePath": "staticwebassets\\images\\products\\product-16.html"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-16.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-16.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-2.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-3.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-4.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-5.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-5.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-6.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-7.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-8.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-8.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\products\\product-9.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-9.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\slides\\slide-1-full.jpg",
+      "PackagePath": "staticwebassets\\images\\slides\\slide-1-full.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\slides\\slide-1-mobile.jpg",
+      "PackagePath": "staticwebassets\\images\\slides\\slide-1-mobile.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\slides\\slide-1.jpg",
+      "PackagePath": "staticwebassets\\images\\slides\\slide-1.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\slides\\slide-2-full.jpg",
+      "PackagePath": "staticwebassets\\images\\slides\\slide-2-full.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\slides\\slide-2-mobile.jpg",
+      "PackagePath": "staticwebassets\\images\\slides\\slide-2-mobile.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\slides\\slide-2.jpg",
+      "PackagePath": "staticwebassets\\images\\slides\\slide-2.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\slides\\slide-3-full.jpg",
+      "PackagePath": "staticwebassets\\images\\slides\\slide-3-full.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\slides\\slide-3-mobile.jpg",
+      "PackagePath": "staticwebassets\\images\\slides\\slide-3-mobile.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\slides\\slide-3.jpg",
+      "PackagePath": "staticwebassets\\images\\slides\\slide-3.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\sprite.svg",
+      "PackagePath": "staticwebassets\\images\\sprite.svg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\teammates\\teammate-1.jpg",
+      "PackagePath": "staticwebassets\\images\\teammates\\teammate-1.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\teammates\\teammate-2.jpg",
+      "PackagePath": "staticwebassets\\images\\teammates\\teammate-2.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\images\\teammates\\teammate-3.jpg",
+      "PackagePath": "staticwebassets\\images\\teammates\\teammate-3.jpg"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\js\\number.js",
+      "PackagePath": "staticwebassets\\js\\number.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Nada\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WebApplication1.props",
+      "PackagePath": "build\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplication1.props",
+      "PackagePath": "buildMultiTargeting\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WebApplication1.props",
+      "PackagePath": "buildTransitive\\WebApplication1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

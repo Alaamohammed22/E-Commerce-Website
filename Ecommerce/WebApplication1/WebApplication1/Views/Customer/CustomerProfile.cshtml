@@ -1,0 +1,157 @@
+﻿@using WebApplication1.ViewModel
+@model CustomerProfileVM
+@{
+    ViewData["Title"] = "CustomerProfile";
+    Layout = "_productLayout";
+
+}
+
+@*<div class="row">
+    <div class="col-md-4">
+        <form enctype="multipart/form-data" asp-action="CustomerProfile" method="post" style="width:1000px;margin-top:100px;margin-left:100px">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div>
+                <img src="/Files/ProfileIMG/@Model.Image" class="rounded-circle" alt="Cinque Terre" width="100" height="100">
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.ImageFile" class="control-label"></label>
+                <input disabled asp-for="@Model.ImageFile" class="form-control" />
+                <span asp-validation-for="@Model.ImageFile" class="text-danger"></span>
+            </div>
+            <br />
+            <input hidden asp-for="@Model.CustomId"/>
+            <div class="form-group" style="display:flex">
+                <label asp-for="@Model.userName"  class="control-label" style="margin-right:30px;margin-top:5px"></label>
+                <input asp-for="@Model.userName" value="@Model.userName" class="form-control" disabled style="background-color:white; border:none;"/>
+                <span asp-validation-for="@Model.userName" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group" style="display:flex">
+                <label asp-for="@Model.Address" class="control-label" style="margin-right:30px;margin-top:5px"></label>
+                <input asp-for="@Model.Address" value="@Model.Address" class="form-control" disabled style="background-color:white; border:none" />
+                <span asp-validation-for="@Model.Address" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group" style="display:flex">
+                <label asp-for="@Model.Email" class="control-label" style="margin-right:30px;margin-top:5px"></label>
+                <input asp-for="@Model.Email" value="@Model.Email" class="form-control" disabled style="background-color:white; border:none" />
+                <span asp-validation-for="@Model.Email" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group" style="display:flex">
+                <label asp-for="@Model.Phone" class="control-label" style="margin-right:30px;margin-top:5px"></label>
+                <input asp-for="@Model.Phone" value="@Model.Phone" class="form-control" disabled style="background-color:white; border:none" />
+                <span asp-validation-for="@Model.Phone" class="text-danger"></span>
+            </div>
+            <br />
+            <div style="display:flex">
+            <div class="form-group">
+                <input type="button" value="Edit" class="btn btn-primary" id="edit"/>
+            </div>
+            <div class="form-group" style="margin-left:20px">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+            </div>
+        </form>
+    </div>
+</div>*@
+
+
+
+<style>
+body{margin-top:100px}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(250, 200, 250);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+</style>
+
+ <div asp-validation-summary="All" class="text-danger"></div>
+<div class="container rounded mt-5 mb-5" style="background-color:#ffd333;">
+    <div class="row">
+        <div class="col-md-12">
+    <form class="row" enctype="multipart/form-data" asp-action="CustomerProfile" method="post">
+        <input hidden asp-for="@Model.CustomId" />
+        <div class="col-md-4 border-right">
+                    <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                        <img class="rounded-circle mt-5" width="150px" height="150px" src="/Files/ProfileIMG/@Model.Image">
+                <span class="font-weight-bold">@Model.userName</span>
+            </div>
+            <div class="form-group hiden" style="display:none">
+                <label asp-for="@Model.ImageFile" class="control-label"></label>
+                <input disabled asp-for="@Model.ImageFile" class="form-control" />
+                <span asp-validation-for="@Model.ImageFile" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="col-md-8 border-right">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Profile Settings</h4>
+                </div>
+                <div class="row mt-3">
+
+                  <div class="form-group col-md-6" >
+                        <label asp-for="@Model.userName" class="control-label" style="margin-top:5px;"></label>
+                        <input asp-for="@Model.userName" value="@Model.userName" class="form-control" disabled style="background-color:white; border:none;" />
+                        <span asp-validation-for="@Model.userName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-6" >
+                        <label asp-for="@Model.Email" class="control-label" style="margin-top:5px"></label>
+                        <input asp-for="@Model.Email" value="@Model.Email" class="form-control" disabled style="background-color:white; border:none" />
+                        <span asp-validation-for="@Model.Email" class="text-danger"></span>
+                    </div>
+                   <div class="form-group col-md-6" >
+                        <label asp-for="@Model.Phone" class="control-label" style="margin-top:5px"></label>
+                        <input asp-for="@Model.Phone" value="@Model.Phone" class="form-control" disabled style="background-color:white; border:none" />
+                        <span asp-validation-for="@Model.Phone" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                    <label asp-for="@Model.Address" class="control-label" style="margin-top:5px"></label>
+                    <input asp-for="@Model.Address" value="@Model.Address" class="form-control" disabled style="background-color:white; border:none" />
+                    <span asp-validation-for="@Model.Address" class="text-danger"></span>
+                    </div>
+
+                    </div>
+                <div class="mt-5 text-center">
+                    <button class="btn btn-primary profile-button" type="button" id="edit" >
+                        Edit Profile
+                    </button>
+                    </div>
+                <div class="mt-5 text-center hiden"style="display:none;">
+                    <button  class="btn btn-primary profile-button" type="submit">
+                        Save Profile
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $('#edit').click(function () {
+            $("#edit").attr("style", "display:none")
+            $('input[type="text"]').removeAttr("disabled");
+            $('input[type="file"]').removeAttr("disabled");
+            $('input[type="text"]').removeAttr("style");
+            $(".hiden").attr("style", "display:block");
+        });
+    </script>
+}
+
+
+

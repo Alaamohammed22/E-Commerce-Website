@@ -1,0 +1,211 @@
+﻿@using WebApplication1.ViewModel
+@model List<SelectedItemsInCartVM>
+
+@{
+    ViewData["Title"] = "Cart";
+
+    Layout = "_productLayout";
+}
+
+<div class="site__body pt-3">
+    <div class="cart block m-5">
+        <div class="container">
+            <table class="cart__table cart-table">
+                <thead class="cart-table__head">
+                    <tr class="cart-table__row">
+                        <th class="cart-table__column cart-table__column--image">Image</th>
+                        <th class="cart-table__column cart-table__column--product">Product</th>
+                        <th class="cart-table__column cart-table__column--price">Price</th>
+                        <th class="cart-table__column cart-table__column--quantity">Quantity</th>
+                        <th class="cart-table__column cart-table__column--total">Total</th>
+                        <th class="cart-table__column cart-table__column--remove"></th>
+                    </tr>
+                </thead>
+                <tbody class="cart-table__body" id="tbody">
+
+
+
+                    @foreach (var item in Model)
+                    {
+                       
+                        
+
+                        <tr class="cart-table__row" id="TR_@item.selectedItemId">
+                            <td class="cart-table__column cart-table__column--image">
+                                <a href="#">
+                                    <img src="@item.Image" alt="">
+                                </a>
+                            </td>
+                            <td class="cart-table__column cart-table__column--product">
+                                <a href="#"
+                               class="cart-table__product-name">@item.productName</a>
+                                <ul class="cart-table__options">
+                                    <li>Color: Yellow</li>
+                                    <li>Material: Aluminium</li>
+                                </ul>
+                            </td>
+                            <td class="cart-table__column cart-table__column--price" data-title="Price">@item.Price</td>
+                            <td class="cart-table__column cart-table__column--quantity" data-title="Quantity">
+                                <div class="input-number">
+                                    <input class="form-control input-number__input" 
+                                       id="quantity_@item.selectedItemId"
+                                       onchange="IncreasePrice(@item.selectedItemId,@item.Price)" type="number" min="1" value="@item.Quantity">
+                                    <div class="input-number__add"></div>
+                                    <div class="input-number__sub"></div>
+                                </div>
+                            </td>
+                            <td id="totalprice_@item.selectedItemId" class="cart-table__column cart-table__column--total" data-title="Total">
+                                @item.totalPrice
+                            </td>
+                            <td class="cart-table__column cart-table__column--remove">
+                                <button type="button"
+                                    onclick="Delete(@item.selectedItemId)"
+                                    class="btn btn-light btn-sm btn-svg-icon">
+                                    <svg width="12px" height="12px">
+                                        <use xlink:href="/images/sprite.svg#cross-12"></use>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                    
+                   }
+
+
+                </tbody>
+            </table>
+            <div class="cart__actions row justify-content-end" style="padding-right:12px">
+                <div class="cart__buttons">
+                    <a class="btn btn-primary" asp-action="Index" asp-controller="Products">Continue Shopping</a>
+                    @*<a class="btn btn-primary cart__update-button">Update Cart</a>*@
+                </div>
+            </div>
+
+            <div class="row justify-content-end pt-5">
+                <div class="col-12 col-md-7 col-lg-6 col-xl-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Cart Totals</h3>
+                            <table class="cart__totals">
+                                <thead class="cart__totals-header">
+                                    <tr>
+                                        <th>Subtotal</th>
+                                        <td id="Subtotal">$@ViewBag.totalprice</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="cart__totals-body">
+                                    <tr>
+                                        <th>Shipping</th>
+                                        <td>
+                                            $25.00<div class="cart__calc-shipping">
+                                                <a href="#">
+                                                    Calculate
+                                                    Shipping
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tax</th>
+                                        <td>$0.00</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot class="cart__totals-footer">
+                                    <tr>
+                                        <th>Total</th>
+                                        <td id="Total">$@(ViewBag.totalprice+25)</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <a class="btn btn-primary btn-xl btn-block cart__checkout-button"
+                               @{
+                                    int CustomerId;
+                               if(Model.FirstOrDefault()==null)
+                                   {
+                                       CustomerId=0;
+                                   
+                                   }
+                                
+                                    else 
+                                    {
+                               CustomerId=Model.FirstOrDefault().CustomId;
+                                    }
+                               }
+                               onclick="Check(@CustomerId)">Proceed to checkout
+                           </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+@section Scripts{
+       <script>
+            
+           $("#CartIcon").html(@Model.Sum(s=>s.Quantity));
+
+        function IncreasePrice(id, p) {
+                $.ajax({
+                    type: 'get',
+                    url: "/Customer/Increase",
+                    data: { "selectId": id, "quantity": $(`#quantity_${id}`).val(), "price": p },
+                    success: function (result) {
+                    $(`#totalprice_${id}`).html(result.producttotalprice);
+                    $("#Subtotal").html("$" + result.totalprice);
+                    $("#Total").html("$" + (result.totalprice + 25));
+                    $("#CartIcon").html(result.totalquantity);
+                    }
+                })
+            }
+
+
+            function Delete(id) {
+
+                $.ajax({
+                    type: 'POST',
+                    url: "/Customer/Delete",
+                    data: { "selectId": id },
+                    success: function (result) {
+                    $(`#TR_${id}`).remove();
+                    $("#Subtotal").html("$"+result)
+                    if (result == 0) {
+                        $("#Total").html("$" + result)
+                    }
+                    else 
+                    {
+                        $("#Total").html("$" + (result + 25))
+                    }
+                    $("#CartIcon").html(result.totalquantity);
+
+                    }
+                })
+            }
+
+
+            function Check(id) {
+                $.ajax({
+                    type:'post',
+                    url: "/customer/order",
+                    data: { "customid":id },
+                    success: function (result) {
+                    $("#tbody").remove();
+                    $("#CartIcon").html(0);
+                    }
+                })
+            }
+
+
+        
+       </script>
+
+
+}
+

@@ -1,0 +1,167 @@
+﻿@model WebApplication1.ViewModel.DelivaryWithOrderListVM
+
+@{
+    ViewData["Title"] = "ShowProfile";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ShowProfile" method="post" style="width:1000px;margin-top:100px;margin-left:600px">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <input hidden asp-for="@Model.ID" />
+            <div class="form-group" style="display:flex">
+                <label asp-for="@Model.UserName" class="control-label" style="margin-right:30px;margin-top:5px;font-size:25px">User Name:</label>
+                <input asp-for="@Model.UserName" value="@Model.UserName" class="form-control" disabled style="background-color:white; border:none;font-size:20px" />
+                <span asp-validation-for="@Model.UserName" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group" style="display:flex">
+                <label asp-for="@Model.Address" class="control-label" style="margin-right:30px;margin-top:5px;font-size:25px">Address:</label>
+                <input asp-for="@Model.Address" value="@Model.Address" class="form-control" disabled style="background-color:white; border:none;font-size:20px;margin-left:25px" />
+                <span asp-validation-for="@Model.Address" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group" style="display:flex">
+                <label asp-for="@Model.SSN" class="control-label" style="margin-right:30px;margin-top:5px;font-size:25px">Email:</label>
+                <input asp-for="@Model.SSN" value="@Model.SSN" class="form-control" disabled style="background-color:white; border:none;font-size:20px;margin-left:36px" />
+                <span asp-validation-for="@Model.SSN" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group" style="display:flex">
+                <label asp-for="@Model.SSNImageName" class="control-label" style="margin-right:30px;margin-top:5px;font-size:25px">Phone:</label>
+                <input asp-for="@Model.SSNImageName" value="@Model.SSNImageName" class="form-control" disabled style="background-color:white; border:none;font-size:20px;margin-left:25px" />
+                <span asp-validation-for="@Model.SSNImageName" class="text-danger"></span>
+            </div>
+            <br />
+            <div style="display:flex">
+                <div class="form-group">
+                    <input type="button" value="Edit" class="btn btn-primary" id="edit" style="border:none;margin-left:30px;width:100px" />
+                </div>
+                <div class="form-group" style="margin-left:20px">
+                    <input type="submit" value="Save" class="btn btn-primary" style="border:none;width:100px" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@*<div class="form-group">
+    <input type="submit" hidden value="Save" class="btn btn-primary" />
+</div>
+<br />
+<div class="form-group">
+    <input type="button" value="Edit" id="edit" class="btn btn-primary" />
+</div>
+<div class="form-group">
+    <input hidden type="text" asp-for="@Model.ID" />
+</div>*@
+@*<h1>ShowProfile</h1>
+<div @*style="display:flex"*@>
+@*
+<div class="row">
+    <div class="col-md-4" style="width:50%">
+        <form asp-action="ShowProfile" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="@Model.UserName" class="control-label"></label>
+                <input disabled asp-for="@Model.UserName" class="form-control" />
+                <span asp-validation-for="@Model.UserName" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="@Model.Address" class="control-label"></label>
+                <input disabled asp-for="@Model.Address" class="form-control" />
+                <span asp-validation-for="@Model.Address" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.SSN" class="control-label"></label>
+                <input disabled asp-for="@Model.SSN" class="form-control" />
+                <span asp-validation-for="@Model.SSN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.SSNImageName" class="control-label"></label>
+                <input disabled asp-for="@Model.SSNImageName" class="form-control" />
+                <span asp-validation-for="@Model.SSNImageName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input id="addOrder" disabled class="form-check-input" asp-for="IsBusy" /> @Html.DisplayNameFor(model => model.IsBusy)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.AccountNumber" class="control-label"></label>
+                <input disabled asp-for="@Model.AccountNumber" class="form-control" />
+                <span asp-validation-for="@Model.AccountNumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" hidden value="Save" class="btn btn-primary" />
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="button" value="Edit" id="edit" class="btn btn-primary" />
+            </div>
+            <div class="form-group">
+                <input hidden type="text" asp-for="@Model.ID" />
+            </div>
+            
+        </form>
+    </div>
+</div>
+<br />
+*@
+@if(!Model.IsBusy)
+{
+        <h3>Available Orders</h3>
+        <div style="display:flex">
+           @foreach (Order item in Model.Orders)
+           {
+            <button class="btn btn-alert" id="BtnChoose" onclick="ChooseOrder(@item.ID)" style="border:1px solid black;padding:50px;margin:10px;">
+            <p>@item.Date</p>
+            <p>@item.TotalPrice</p>
+            <p>@item.PaidMethod</p>
+             <p>@item.CrediteNumber</p>
+            </button>
+           }
+        </div>
+}
+</div>
+
+
+@section Scripts{
+<script>
+    $('#edit').click(function () {
+        $('input[type="text"]').removeAttr("disabled");
+        $('input[type="checkbox"]').removeAttr("disabled")
+        $('input[type="submit"]').removeAttr("hidden");
+        $('input[type="text"]').removeAttr("style");
+    });
+
+        $('#BtnChoose').click(function () {
+            $(this).attr('disabled', 'selected');
+            $('#addOrder').prop('checked', true);
+        });
+
+
+        function ChooseOrder(id)
+        {
+            var order = $('#addOrder').text();
+
+            $.ajax({
+                type:'post',
+                url: "/Delivary/Checked/"+id,
+                success:function(result){
+                    console.log("Success");
+                }
+
+            })
+        }
+        //$('#orderBtn').click(function () {
+        //    //$('input[type="checkbox"]').removeAttr("hidden");
+        //    $('#big').show();
+        //})
+        
+
+</script>
+}

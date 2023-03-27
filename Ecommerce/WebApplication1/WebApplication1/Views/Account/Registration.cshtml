@@ -1,0 +1,66 @@
+﻿@model WebApplication1.ViewModel.RegistrationVM
+
+@{
+    ViewData["Title"] = "Registration";
+    Layout = "_productLayout";
+    SelectList selectionitemofdepartement = new SelectList(Model.IdentityRoleS, "Name", "Name");
+}
+
+<div class="container my-5 w-75">
+
+<h1>Registration</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Registration" enctype="multipart/form-data">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword" class="control-label"></label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" class="form-control" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+
+          
+            <div class="form-group">
+                <label asp-for="RoleName"></label>
+                <select asp-for="RoleName" asp-items="selectionitemofdepartement" class="form form-control"></select>
+                <span asp-validation-for="RoleName"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+        <a asp-action="Login">Have an Account?</a>
+</div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

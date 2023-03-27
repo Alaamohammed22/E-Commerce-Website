@@ -1,0 +1,15 @@
+﻿namespace WebApplication1.repo
+{
+    public interface Ireposatory<T>
+    {
+
+
+        public List<T> getall();
+        public List<T> getall(string s); // to make include by s as opject in the dbset 
+        public T getbyid(int id);
+        public void create(T course);
+        public void update(T course);
+        public void delete(T course);
+
+    }
+}

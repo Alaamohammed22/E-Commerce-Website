@@ -1,0 +1,182 @@
+﻿
+@model SupplierVM 
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "_productLayout";
+}
+
+<style>
+    body {
+        margin-top: 100px
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+        border-color: #BA68C8
+    }
+
+    .profile-button {
+        background: rgb(250, 200, 250);
+        box-shadow: none;
+        border: none
+    }
+
+        .profile-button:hover {
+            background: #682773
+        }
+
+</style>
+
+@*<form  asp-action="Update" enctype="multipart/form-data">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div>
+        <label asp-for="SSN" class="control-label"></label>
+        <input asp-for="SSN" class="form-control" />
+        <span asp-validation-for="SSN" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="VerifecationState" class="control-label"></label>
+        <input asp-for="VerifecationState" class="form-control" />
+        <span asp-validation-for="VerifecationState" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="TotalSales" class="control-label"></label>
+        <input asp-for="TotalSales" class="form-control" />
+        <span asp-validation-for="TotalSales" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="AccountNumber" class="control-label"></label>
+        <input asp-for="AccountNumber" class="form-control" />
+        <span asp-validation-for="AccountNumber" class="text-danger"></span>
+    </div>
+    <div>
+        <label for="SSNImageName">SSNImageName</label>
+        <img width="100" height="100" src="/Files/SSNIMG/@Model.SSNImageName" /> 
+    </div>
+    <div class="form-group">
+        <label asp-for="SSNImageFile" class="control-label"></label>
+        <input asp-for="SSNImageFile" class="form-control" />
+        <span asp-validation-for="SSNImageFile" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Create" class="btn btn-success" />
+</form>
+*@
+@*<a href="/Supplier/GetAll">Back To List</a>*@
+
+
+
+<div asp-validation-summary="All" class="text-danger"></div>
+<div class="container rounded mt-5 mb-5" style="background-color:#ffd333;">
+    <div class="row">
+        <div class="col-md-12">
+            <form class="row" asp-action="Update" enctype="multipart/form-data">
+
+                <div class="col-md-4 border-right">
+                    <div class="d-flex flex-column align-items-center text-center p-3 py-5 mt-5">
+                        <img class="rounded-circle mt-5" width="150px" height="150px" src="/Files/ProfileIMG/@Model.Image">
+                        <span class="font-weight-bold">@Model.UserName</span>
+                    </div>
+                    <div class="form-group hiden" style="display:none">
+                        <label asp-for="ImageFile" class="control-label"></label>
+                        <input disabled asp-for="ImageFile" class="form-control just" />
+                        <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-8 border-right">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="text-right">Profile Settings</h4>
+                        </div>
+                        <div class="row mt-3">
+
+                            <div class="form-group col-md-6">
+                                <label asp-for="UserName" class="control-label" style="margin-top:5px;"></label>
+                                <input asp-for="UserName" class="form-control just" disabled style="background-color:white; border:none;" />
+                                <span asp-validation-for="UserName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="Email" class="control-label" style="margin-top:5px"></label>
+                                <input asp-for="Email" class="form-control just" disabled style="background-color:white; border:none" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label asp-for="Address" class="control-label" style="margin-top:5px"></label>
+                                <input asp-for="Address" class="form-control just" disabled style="background-color:white; border:none" />
+                                <span asp-validation-for="Address" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="PhoneNumber" class="control-label" style="margin-top:5px"></label>
+                                <input asp-for="PhoneNumber" class="form-control just" disabled style="background-color:white; border:none" />
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label asp-for="VerifecationState" class="control-label" style="margin-top:5px"></label>
+                                <input asp-for="VerifecationState" value="@Model.VerifecationState" class="form-control" readonly style="background-color:white; border:none" />
+                                <span asp-validation-for="VerifecationState" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label asp-for="TotalSales" class="control-label" style="margin-top:5px"></label>
+                                <input asp-for="TotalSales" value="@Model.TotalSales" class="form-control" readonly style="background-color:white; border:none" />
+                                <span asp-validation-for="TotalSales" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label asp-for="SSN" class="control-label" style="margin-top:5px;"></label>
+                                <input disabled asp-for="SSN" class="form-control just" disabled style="background-color:white; border:none" />
+                                <span asp-validation-for="SSN" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="AccountNumber" class="control-label" style="margin-top:5px;"></label>
+                                <input disabled asp-for="AccountNumber" class="form-control just" disabled style="background-color:white; border:none" />
+                                <span asp-validation-for="AccountNumber" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <img src="/Files/SSNIMG/@Model.SSNImageName" alt="Cinque Terre" width="100%" height="50">
+                            </div>
+                            <div class="form-group col-md-6  hiden" style="display:none">
+                                <label asp-for="SSNImageFile" class="control-label"></label>
+                                <input disabled asp-for="SSNImageFile" class="form-control just" />
+                                <span asp-validation-for="SSNImageFile" class="text-danger"></span>
+                            </div>
+
+                        </div>
+                        <div class="mt-5 text-center">
+                            <button class="btn btn-primary profile-button" type="button" id="edit">
+                                Edit Profile
+                            </button>
+                        </div>
+                        <div class="mt-5 text-center hiden" style="display:none;">
+                            <button class="btn btn-primary profile-button" type="submit">
+                                Save Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+
+        $('#edit').click(function () {
+            $("#edit").attr("style", "display:none")
+            $(".just").removeAttr("disabled");
+           // $('input[type="file"]').removeAttr("disabled");
+            $('input[type="text"]').removeAttr("style");
+            $(".hiden").attr("style", "display:block");
+        });
+
+
+    </script>
+}
